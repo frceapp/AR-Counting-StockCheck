@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Material 3 dark, edge-to-edge, no action bar (we use a custom top bar). -->
+    <style name="Theme.StockCheck" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/brand_primary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/brand_primary_dim</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_card_high</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="android:colorBackground">@color/surface_bg</item>
+        <item name="colorOutline">@color/border_strong</item>
+
+        <!-- Status bar / nav bar transparent for an edge-to-edge camera feel. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- Buttons read as pill-shaped surfaces, not square. -->
+        <item name="materialButtonStyle">@style/Widget.StockCheck.Button</item>
+        <item name="bottomNavigationStyle">@style/Widget.StockCheck.BottomNav</item>
+    </style>
+
+    <style name="Widget.StockCheck.Button" parent="Widget.Material3.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingHorizontal">22dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.StockCheck.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.StockCheck.BottomNav.ActiveIndicator</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.StockCheck.BottomNav.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.StockCheck.BottomNav.Inactive</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.StockCheck.BottomNav.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">@color/brand_primary_dim</item>
+    </style>
+
+    <style name="TextAppearance.StockCheck.BottomNav.Active" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.StockCheck.BottomNav.Inactive" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>

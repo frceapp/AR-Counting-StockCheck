@@ -1,0 +1,9 @@
+-1
+bearing
+bolt
+flange
+gear
+nut
+retaining_ring
+spring
+washer

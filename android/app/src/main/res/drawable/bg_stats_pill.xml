@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Frosted, dark glass pill used for the top status chip and floating chips. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/surface_overlay" />
+    <stroke android:width="0.5dp" android:color="@color/border_subtle" />
+    <corners android:radius="100dp" />
+</shape>

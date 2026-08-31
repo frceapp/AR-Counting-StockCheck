@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stock Check</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_capture">Capture</string>
+    <string name="nav_sessions">Sessions</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Permission gate -->
+    <string name="camera_permission_rationale">Stock Check needs camera access to identify parts on the shelf in real time.</string>
+    <string name="camera_permission_denied">Camera permission is required. Enable it in Settings to start detection.</string>
+    <string name="grant_permission">Grant camera access</string>
+
+    <!-- Capture screen -->
+    <string name="camera_preview_description">Live camera preview used for mechanical part detection</string>
+    <string name="detection_overlay_description">Overlay showing detected mechanical parts and their labels</string>
+    <string name="stats_placeholder">Loading model…</string>
+    <string name="stats_ready">Ready · point and Capture</string>
+    <string name="stats_scanning">Scanning…</string>
+    <string name="stats_format">%1$d anchored · %2$d ms</string>
+    <string name="stats_nothing_found">Nothing found · best %1$d%% · move closer</string>
+    <string name="capture">Capture</string>
+    <string name="capture_running">Scanning…</string>
+    <string name="clear_anchors">Clear</string>
+    <string name="save_session">Save session</string>
+    <string name="anchored_parts">Anchored parts</string>
+    <string name="no_anchors_yet">No parts anchored yet. Capture to start.</string>
+    <string name="model_load_error">Failed to load the detection model.</string>
+
+    <!-- Session save flow -->
+    <string name="session_default_name">Session %1$s</string>
+    <string name="session_dialog_title">Save session</string>
+    <string name="session_dialog_hint">Name this session</string>
+    <string name="session_dialog_save">Save</string>
+    <string name="session_dialog_cancel">Cancel</string>
+    <string name="session_save_need_anchors">Place at least one anchor first.</string>
+    <string name="session_saved">Saved · %1$s</string>
+    <string name="session_save_failed">Couldn\'t save the session. Try again.</string>
+
+    <!-- Sessions screen -->
+    <string name="sessions_title">Saved sessions</string>
+    <string name="sessions_empty_title">No sessions yet</string>
+    <string name="sessions_empty_body">Saved sessions appear here. Capture a frame and tap Save session to export the anchor list as JSON to your Downloads folder.</string>
+    <string name="sessions_count">%1$d saved</string>
+    <string name="session_open">Open JSON</string>
+    <string name="session_share">Share</string>
+    <string name="session_delete">Delete</string>
+    <string name="session_delete_confirm">Delete this session from the index? The JSON file in Downloads is left in place.</string>
+    <string name="session_no_app_to_open">No app found to open JSON files.</string>
+    <string name="session_share_subject">Stock Check session · %1$s</string>
+    <string name="session_detail_anchors">%1$d anchors</string>
+
+    <!-- Settings screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_model_section">Detection</string>
+    <string name="settings_model_name">Model</string>
+    <string name="settings_model_backend">Backend</string>
+    <string name="settings_classes_count">%1$d classes</string>
+
+    <string name="settings_tracking_section">Tracking</string>
+    <string name="settings_hold_title">Hold anchored parts</string>
+    <string name="settings_hold_summary">Keep anchors on screen after the model loses sight of them, until you clear them.</string>
+    <string name="settings_hold_when_lost">Auto-clear when off-screen</string>
+    <string name="settings_hold_when_lost_summary">Drop an anchor as soon as its world point leaves the camera view.</string>
+
+    <string name="settings_session_section">Sessions</string>
+    <string name="settings_default_location">Default save location</string>
+    <string name="settings_default_location_summary">Where Save session exports the JSON file. Currently Downloads/StockCheck.</string>
+
+    <string name="settings_about_section">About</string>
+    <string name="settings_app_version">App version</string>
+    <string name="settings_app_description">Real-time part detection for warehouse stock checks. Anchors stay locked to the shelf as you scan; export the session as JSON to your Downloads folder.</string>
+</resources>

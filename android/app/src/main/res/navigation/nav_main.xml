@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/captureFragment">
+
+    <fragment
+        android:id="@+id/captureFragment"
+        android:name="com.warehouse.stockchecker.ui.capture.CaptureFragment"
+        android:label="@string/nav_capture"
+        tools:layout="@layout/fragment_capture"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/sessionsFragment"
+        android:name="com.warehouse.stockchecker.ui.sessions.SessionsFragment"
+        android:label="@string/nav_sessions"
+        tools:layout="@layout/fragment_sessions"
+        xmlns:tools="http://schemas.android.com/tools" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.warehouse.stockchecker.ui.settings.SettingsFragment"
+        android:label="@string/nav_settings"
+        tools:layout="@layout/fragment_settings"
+        xmlns:tools="http://schemas.android.com/tools" />
+</navigation>

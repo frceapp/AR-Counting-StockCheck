@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_model_section">
+
+        <Preference
+            app:key="model_name"
+            app:title="@string/settings_model_name"
+            app:summary="component_parts.tflite"
+            app:selectable="false" />
+
+        <Preference
+            app:key="model_backend"
+            app:title="@string/settings_model_backend"
+            app:summary="TFLite · CPU (GPU optional)"
+            app:selectable="false" />
+
+        <Preference
+            app:key="model_classes"
+            app:title="@string/anchored_parts"
+            app:summary="@string/settings_classes_count"
+            app:selectable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_tracking_section">
+
+        <SwitchPreferenceCompat
+            app:key="track_hold_enabled"
+            app:title="@string/settings_hold_title"
+            app:summary="@string/settings_hold_summary"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="track_drop_when_off_screen"
+            app:title="@string/settings_hold_when_lost"
+            app:summary="@string/settings_hold_when_lost_summary"
+            app:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_session_section">
+
+        <Preference
+            app:key="default_save_location"
+            app:title="@string/settings_default_location"
+            app:summary="@string/settings_default_location_summary"
+            app:selectable="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/settings_about_section">
+
+        <Preference
+            app:key="app_version"
+            app:title="@string/settings_app_version"
+            app:selectable="false" />
+
+        <Preference
+            app:key="app_description"
+            app:title="@string/app_name"
+            app:summary="@string/settings_app_description"
+            app:selectable="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

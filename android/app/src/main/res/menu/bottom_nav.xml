@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/captureFragment"
+        android:icon="@drawable/ic_camera"
+        android:title="@string/nav_capture" />
+    <item
+        android:id="@+id/sessionsFragment"
+        android:icon="@drawable/ic_sessions"
+        android:title="@string/nav_sessions" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/nav_settings" />
+</menu>

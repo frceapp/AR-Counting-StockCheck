@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  FileProvider mapping for JSON exports. We never share raw filesystem paths; everything is
+  exposed as content:// URIs so the chooser can grant temporary read access.
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="exports"
+        path="Download/StockCheck/" />
+    <files-path
+        name="internal_exports"
+        path="exports/" />
+</paths>

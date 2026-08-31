@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand: cool steel blue with a hint of cyan. Tuned for dark UI. -->
+    <color name="brand_primary">#FF4F8CFF</color>
+    <color name="brand_primary_dim">#FF2A5BC9</color>
+    <color name="brand_accent">#FF66E1FF</color>
+
+    <!-- Surfaces -->
+    <color name="surface_bg">#FF0B0F14</color>
+    <color name="surface_card">#FF131A23</color>
+    <color name="surface_card_high">#FF1B2531</color>
+    <color name="surface_overlay">#CC0B0F14</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFE6EDF3</color>
+    <color name="text_secondary">#FF9AA7B4</color>
+    <color name="text_tertiary">#FF6B7785</color>
+
+    <!-- Borders / dividers -->
+    <color name="border_subtle">#1AFFFFFF</color>
+    <color name="border_strong">#33FFFFFF</color>
+
+    <!-- Semantic -->
+    <color name="status_live">#FF66E1FF</color>
+    <color name="status_held">#FF9AA7B4</color>
+    <color name="status_success">#FF52D9A4</color>
+    <color name="status_warning">#FFFFB454</color>
+    <color name="status_danger">#FFFF6B6B</color>
+
+    <!-- Back-compat aliases (existing code references these) -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_primary_dark">#FF0D47A1</color>
+    <color name="scrim_70">#B3000000</color>
+</resources>
